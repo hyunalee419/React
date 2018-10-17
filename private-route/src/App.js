@@ -83,7 +83,7 @@ class App extends Component {
           </ul>
           <Route path="/public" component={Public} />
           <Route path="/login" component={Login} />
-          <PrivateRoute path='/protected' component={Protected} />
+          <PrivateRoute path="/protected" component={Protected} />
         </div>
       </Router>
     );
