@@ -222,4 +222,4 @@ npm run dev
 
 localhost:8000 접속
 ```
-![localhost 접속 예제](/ex/webpack_sample.png "localhost 접속 예제")
+![localhost 접속 예제](/React/webpack_sample/ex/webpack_sample.png "localhost 접속 예제")
