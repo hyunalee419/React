@@ -222,5 +222,4 @@ npm run dev
 
 localhost:8000 접속
 ```
-[localhost:8000](localhost:8000)
 ![localhost 접속 예제](./ex/webpack_sample.png)
