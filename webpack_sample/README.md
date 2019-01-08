@@ -220,6 +220,6 @@ package.json에 `scripts` 를 추가해 놓으면 긴 명령어를 간편하게 
 npm run build // js 파일 경로를 알기 위해 한 번 빌드해준다.
 npm run dev
 
-localhost:8000 접속
+[localhost:8000](localhost:8000) 접속
 ```
 ![localhost 접속 예제](./ex/webpack_sample.png)
