@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 interface Props {
-  firstName: string,
-  lastName: string
+  firstName: string;
+  lastName: string;
 }
 
 // JSX 리턴을 하지 않을 경우 에러가 Ex2가 아닌 index.tsx 에서 발생
