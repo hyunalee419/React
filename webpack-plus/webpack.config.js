@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const PATH_SOURCE = path.join(__dirname, '/src');
 const PATH_BUILD  = path.join(__dirname, '/dist');
 
@@ -26,6 +28,16 @@ module.exports = {
 					}
 				}]
 			},
+			{
+				test: /\.css$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: { sourceMap: true }
+					}
+				]
+			}
 		]
 	},
 
@@ -38,6 +50,13 @@ module.exports = {
 		modules: [path.join(__dirname, 'src'), 'node_modules'],
 		extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
 	},
+
+	plugins: [
+		new OptimizeCSSAssetsPlugin(),
+		new MiniCssExtractPlugin({
+			fileName: '[name]/[name].css'
+		})
+	],
 
 	devServer: {
 		port: 8000,
