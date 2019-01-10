@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Ex2 from './components/Ex2';
+import Ex3 from './components/Ex3';
 
 ReactDOM.render(
-	<Ex2 firstName="hyuna2" lastName="lee2"/>,
+	<Ex3>clickButton</Ex3>,
 	document.getElementById('root')
 );
