@@ -8,7 +8,7 @@ module.exports = {
 
 	mode: 'development',
 	entry: {
-		index : PATH_SOURCE + '/index/index.js',
+		index : PATH_SOURCE + '/index/index.tsx',
 	},
 
 	module: {
@@ -20,15 +20,19 @@ module.exports = {
 					loader: 'babel-loader',
 					options: {
 						presets: [
-							"@babel/preset-env",
-							"@babel/preset-react"
+							'@babel/preset-env',
+							'@babel/preset-react'
 						],
 						plugins: [
-							"transform-class-properties"
+							'transform-class-properties'
 						]
 					}
 				}]
 			},
+			{
+				test: /\.tsx?$/,
+				loader: 'ts-loader'
+			}
 		]
 	},
 
@@ -39,7 +43,7 @@ module.exports = {
 
 	resolve: {
 		modules: [path.join(__dirname, 'src'), 'node_modules'],
-		extensions: ['.js', '.jsx', '.css', '.scss', '.json'],
+		extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.scss', '.json'],
 	},
 
 	devServer: {

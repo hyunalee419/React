@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "jsx": "react"  // Resolve: Cannot use JSX unless '--jsx' flag is provided
+  }
+}
