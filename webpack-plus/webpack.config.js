@@ -8,6 +8,7 @@ const PATH_BUILD  = path.join(__dirname, '/dist');
 
 module.exports = {
 
+	mode: 'development',
 	entry: {
 		index : PATH_SOURCE + '/index/index.js',
 	},
