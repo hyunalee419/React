@@ -1,4 +1,4 @@
-이 프로젝트는 [webpack_sample](https://github.com/LeeHyun-A/React/tree/master/webpack_sample)을 기반으로 typescript를 React에서 사용하는 방법에 대해 설명합니다.
+이 프로젝트는 [webpack-sample](https://github.com/LeeHyun-A/React/tree/master/webpack-sample)을 기반으로 typescript를 React에서 사용하는 방법에 대해 설명합니다.
 
 React에서 PropTypes로 충분히 타입 체킹이 가능하지만 state, function parameters 등의 타입 체킹은 할 수 없다. 그래서 TypeScript를 적용해보고자 합니다.
 
