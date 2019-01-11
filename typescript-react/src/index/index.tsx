@@ -3,6 +3,6 @@ import * as ReactDOM from 'react-dom';
 import Ex3 from './components/Ex3';
 
 ReactDOM.render(
-	<Ex3>clickButton</Ex3>,
+	<Ex3/>,
 	document.getElementById('root')
 );
