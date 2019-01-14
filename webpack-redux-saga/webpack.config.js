@@ -10,7 +10,10 @@ module.exports = {
 
 	mode: 'development',
 	entry: {
-		index : PATH_SOURCE + '/index/index.js',
+		index : [
+			"@babel/polyfill",
+			PATH_SOURCE + '/index/index.js'
+		]
 	},
 
 	module: {
@@ -25,9 +28,9 @@ module.exports = {
 							"@babel/preset-env",
 							"@babel/preset-react"
 						],
-						// plugins: [
-						// 	"transform-class-properties"
-						// ]
+						plugins: [
+							"transform-class-properties"
+						]
 					}
 				}]
 			},
