@@ -99,6 +99,8 @@ export default function* mySaga() {
 > Creates an Effect description that instructs the middleware <i>to dispatch an action to the Store</i>. This effect is non-blocking and any errors that are thrown downstream (e.g. in a reducer) will not bubble back into the saga.
 > - `action`: Object - see Redux dispatch documentation for complete info
 
+만약 여러개의 saga를 추가하고 싶은 경우 `all` ([all](https://github.com/redux-saga/redux-saga/issues/160#issuecomment-307571438))을 사용하자
+
 ## store.js
 ```
 import { createStore, applyMiddleware } from 'redux';
