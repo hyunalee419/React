@@ -1,8 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Ex3 from './components/Ex3';
+import Ex2 from './components/Ex2';
+import './scss/index.scss';
 
 ReactDOM.render(
-	<Ex3/>,
+	<Ex2 firstName="hyuna"/>,
 	document.getElementById('root')
 );
