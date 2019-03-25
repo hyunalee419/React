@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Count = () => {
   const [ count, setCount ] = useState(0);
 
+  useEffect(() => {
+    console.log('componentDidMount, componentDidUpdate');
+  });
+
+  console.log('render Count');
   return (
     <>
       Count: { count }
